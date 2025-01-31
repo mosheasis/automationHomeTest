@@ -1,0 +1,9 @@
+[
+  "test_sign_in_page.py::TestSignInPage::test_Add_item_to_cart",
+  "test_sign_in_page.py::TestSignInPage::test_verify_inventory_items",
+  "test_sign_in_page.py::test_add_item_to_cart[1-1]",
+  "test_sign_in_page.py::test_add_item_to_cart[6]",
+  "test_sign_in_page.py::test_cases",
+  "test_sign_in_page.py::test_verify_inventory_items",
+  "test_sign_in_page.py::test_verify_inventory_items[6]"
+]
