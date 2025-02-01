@@ -2,5 +2,7 @@
   "test_sign_in_page.py::test_cases": true,
   "test_sign_in_page.py::TestSignInPage::test_verify_inventory_items": true,
   "test_sign_in_page.py::TestSignInPage::test_Add_item_to_cart": true,
-  "test_sign_in_page.py::test_add_item_to_cart[6]": true
+  "test_sign_in_page.py::test_add_item_to_cart[6]": true,
+  "test_sign_in_page.py::test_verify_inventory_items[6]": true,
+  "test_sign_in_page.py::test_add_item_to_cart[1-1]": true
 }

@@ -1,7 +1,7 @@
 """
 Implements base REST API.
 """
-
+import logging
 from typing import Optional, Union
 import requests
 
@@ -53,10 +53,10 @@ class BaseRest:
 
 def check_response(response: requests.Response) -> None:
     """Check_response rest command."""
-    # logger.debug(f"Response is {response}")
+    logging.debug(f"Response is {response}")
     if response.status_code >= 400:
         error_message = f"Error code is {response.status_code}, description {response.content.decode('utf-8').strip()}"
-        #    logger.error(error_message)
+        logging.error(error_message)
         raise ValueError(error_message)
     if response.text:
         check_response_json(response, "Success")
@@ -67,7 +67,7 @@ def check_response_json(response: requests.Response, expect_message: str) -> Non
     response_json = response.json()
     if "description" in response_json:
         description = response_json["description"]
-        #  logger.debug(f"Response description is {description}")
+        logging.info(f"Response description is {description}")
         if expect_message not in description:
-            #     logger.error(description)
+            logging.error(description)
             raise ValueError(description)
